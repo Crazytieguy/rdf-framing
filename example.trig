@@ -1,0 +1,32 @@
+@prefix :     <cycognito:/> .
+@prefix org:  <cycognito:/organisation/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<cycognito:/source/bc9e0127-81cd-11ec-9b96-00155de8c6e9>
+        rdf:type     :source ;
+        :created-at  "2022-01-30T15:08:37.439351"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        :date        "2020-12-31"^^<http://www.w3.org/2001/XMLSchema#date> ;
+        :type        <cycognito:/source-type/annual-report> ;
+        :updated-at  "2022-01-30T15:08:37.439351"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        :url         "https://last10k.com/sec-filings/fang#link_exhibits" .
+
+<cycognito:/source/bc9e0127-81cd-11ec-9b96-00155de8c6e9> {
+    org:bc9e1e81-81cd-11ec-9f3f-00155de8c6e9
+            rdf:type                    :organisation ;
+            rdfs:label                  "Diamondback Energy, Inc." ;
+            :has-domain                 <cycognito:/domain/diamondbackenergy.com> ;
+            :has-name                   <cycognito:/name/bc9e21d6-81cd-11ec-b89b-00155de8c6e9> , <cycognito:/name/bc9e29d1-81cd-11ec-a567-00155de8c6e9> .
+    
+    <cycognito:/name/bc9e21d6-81cd-11ec-b89b-00155de8c6e9>
+            rdf:type    :name ;
+            rdfs:label  "Diamondback Energy, Inc." ;
+            :type       <cycognito:/name-type/manual> ;
+            :value      "Diamondback Energy, Inc." .
+    
+    <cycognito:/name/bc9e29d1-81cd-11ec-a567-00155de8c6e9>
+            rdf:type    :name ;
+            rdfs:label  "Diamondback" ;
+            :type       <cycognito:/name-type/manual-alt> ;
+            :value      "Diamondback" .
+}
